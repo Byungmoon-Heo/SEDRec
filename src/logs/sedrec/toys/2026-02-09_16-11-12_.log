@@ -1,0 +1,139 @@
+2026-02-09 16:11:13,313 - logger - INFO - _
+2026-02-09 16:11:13,314 - logger - INFO - Arguments:
+dataset: toys
+log_file: logs/
+random_seed: 2025
+max_len: 50
+device: cuda:0
+batch_size: 512
+hidden_size: 128
+dropout: 0.1
+emb_dropout: 0.3
+hidden_act: gelu
+num_blocks: 2
+epochs: 500
+decay_step: 100
+gamma: 0.1
+metric_ks: [5, 10]
+optimizer: Adam
+lr: 0.001
+weight_decay: 1e-05
+momentum: None
+schedule_sampler_name: uniform
+diffusion_steps: 32
+lambda_uncertainty: 0.001
+rescale_timesteps: True
+eval_interval: 5
+epoch_wo_val: 0
+patience: 4
+diversity_measure: False
+epoch_time_avg: False
+dif_decoder: att
+split_onebyone: False
+noise_schedule: trunc_lin
+beta_a: 0.3
+beta_b: 10
+is_causal: True
+dif_objective: pred_x0
+parallel_ag: True
+model: sedrec
+independent: False
+pretrained: True
+freeze_emb: True
+cfg_scale: 1
+geodesic: False
+loss: mse
+loss_scale: 1.0
+pcgrad: False
+description: _
+freeze_semantic_emb: 1
+freeze_semantic_proj: 1
+lambda_sem: 0.7
+lambda_align: 0.09
+align_layer_idx: -2
+beta_infer: 0.1
+alpha_train: 0.09
+sync_sem_last_t: 1
+sem_cond_from_history_sem: 1
+semantic_emb_file: semantic_emb_sentence-t5-base.npy
+item_num: 11924
+2026-02-09 16:11:17,139 - logger - INFO - loss in epoch 0: ce_loss 7.987, dif_loss 1.708
+2026-02-09 16:11:19,570 - logger - INFO - loss in epoch 1: ce_loss 7.638, dif_loss 1.584
+2026-02-09 16:11:21,979 - logger - INFO - loss in epoch 2: ce_loss 7.949, dif_loss 1.445
+2026-02-09 16:11:24,404 - logger - INFO - loss in epoch 3: ce_loss 8.320, dif_loss 1.304
+2026-02-09 16:11:26,816 - logger - INFO - loss in epoch 4: ce_loss 8.623, dif_loss 1.164
+2026-02-09 16:11:26,817 - logger - INFO - warm up finishied in epoch 5
+2026-02-09 16:11:29,335 - logger - INFO - loss in epoch 5: ce_loss 8.456, dif_loss 1.010
+2026-02-09 16:11:36,291 - logger - INFO - {'Best_HR@5': 0.0271, 'Best_NDCG@5': 0.0174, 'Best_HR@10': 0.0455, 'Best_NDCG@10': 0.0234}
+2026-02-09 16:11:36,291 - logger - INFO - {'Best_epoch_HR@5': 5, 'Best_epoch_NDCG@5': 5, 'Best_epoch_HR@10': 5, 'Best_epoch_NDCG@10': 5}
+2026-02-09 16:11:38,809 - logger - INFO - loss in epoch 6: ce_loss 7.752, dif_loss 0.898
+2026-02-09 16:11:41,326 - logger - INFO - loss in epoch 7: ce_loss 7.459, dif_loss 0.824
+2026-02-09 16:11:43,841 - logger - INFO - loss in epoch 8: ce_loss 7.262, dif_loss 0.767
+2026-02-09 16:11:46,449 - logger - INFO - loss in epoch 9: ce_loss 7.108, dif_loss 0.721
+2026-02-09 16:11:48,951 - logger - INFO - loss in epoch 10: ce_loss 6.975, dif_loss 0.686
+2026-02-09 16:11:55,553 - logger - INFO - {'Best_HR@5': 0.0599, 'Best_NDCG@5': 0.0391, 'Best_HR@10': 0.0905, 'Best_NDCG@10': 0.049}
+2026-02-09 16:11:55,553 - logger - INFO - {'Best_epoch_HR@5': 10, 'Best_epoch_NDCG@5': 10, 'Best_epoch_HR@10': 10, 'Best_epoch_NDCG@10': 10}
+2026-02-09 16:11:58,061 - logger - INFO - loss in epoch 11: ce_loss 6.855, dif_loss 0.661
+2026-02-09 16:12:00,598 - logger - INFO - loss in epoch 12: ce_loss 6.740, dif_loss 0.642
+2026-02-09 16:12:03,108 - logger - INFO - loss in epoch 13: ce_loss 6.636, dif_loss 0.629
+2026-02-09 16:12:05,621 - logger - INFO - loss in epoch 14: ce_loss 6.534, dif_loss 0.618
+2026-02-09 16:12:08,129 - logger - INFO - loss in epoch 15: ce_loss 6.436, dif_loss 0.613
+2026-02-09 16:12:14,877 - logger - INFO - {'Best_HR@5': 0.073, 'Best_NDCG@5': 0.0476, 'Best_HR@10': 0.1038, 'Best_NDCG@10': 0.0576}
+2026-02-09 16:12:14,877 - logger - INFO - {'Best_epoch_HR@5': 15, 'Best_epoch_NDCG@5': 15, 'Best_epoch_HR@10': 15, 'Best_epoch_NDCG@10': 15}
+2026-02-09 16:12:17,480 - logger - INFO - loss in epoch 16: ce_loss 6.342, dif_loss 0.610
+2026-02-09 16:12:19,994 - logger - INFO - loss in epoch 17: ce_loss 6.246, dif_loss 0.609
+2026-02-09 16:12:22,493 - logger - INFO - loss in epoch 18: ce_loss 6.162, dif_loss 0.610
+2026-02-09 16:12:25,008 - logger - INFO - loss in epoch 19: ce_loss 6.076, dif_loss 0.612
+2026-02-09 16:12:27,508 - logger - INFO - loss in epoch 20: ce_loss 5.993, dif_loss 0.614
+2026-02-09 16:12:34,792 - logger - INFO - {'Best_HR@5': 0.0763, 'Best_NDCG@5': 0.0512, 'Best_HR@10': 0.1085, 'Best_NDCG@10': 0.0616}
+2026-02-09 16:12:34,798 - logger - INFO - {'Best_epoch_HR@5': 20, 'Best_epoch_NDCG@5': 20, 'Best_epoch_HR@10': 20, 'Best_epoch_NDCG@10': 20}
+2026-02-09 16:12:37,323 - logger - INFO - loss in epoch 21: ce_loss 5.913, dif_loss 0.620
+2026-02-09 16:12:39,840 - logger - INFO - loss in epoch 22: ce_loss 5.833, dif_loss 0.623
+2026-02-09 16:12:42,432 - logger - INFO - loss in epoch 23: ce_loss 5.756, dif_loss 0.630
+2026-02-09 16:12:44,967 - logger - INFO - loss in epoch 24: ce_loss 5.686, dif_loss 0.634
+2026-02-09 16:12:47,466 - logger - INFO - loss in epoch 25: ce_loss 5.616, dif_loss 0.638
+2026-02-09 16:12:54,760 - logger - INFO - {'Best_HR@5': 0.0784, 'Best_NDCG@5': 0.0534, 'Best_HR@10': 0.1101, 'Best_NDCG@10': 0.0637}
+2026-02-09 16:12:54,760 - logger - INFO - {'Best_epoch_HR@5': 25, 'Best_epoch_NDCG@5': 25, 'Best_epoch_HR@10': 25, 'Best_epoch_NDCG@10': 25}
+2026-02-09 16:12:57,264 - logger - INFO - loss in epoch 26: ce_loss 5.543, dif_loss 0.645
+2026-02-09 16:12:59,780 - logger - INFO - loss in epoch 27: ce_loss 5.475, dif_loss 0.652
+2026-02-09 16:13:02,280 - logger - INFO - loss in epoch 28: ce_loss 5.413, dif_loss 0.658
+2026-02-09 16:13:04,788 - logger - INFO - loss in epoch 29: ce_loss 5.345, dif_loss 0.663
+2026-02-09 16:13:07,374 - logger - INFO - loss in epoch 30: ce_loss 5.288, dif_loss 0.669
+2026-02-09 16:13:14,345 - logger - INFO - {'Best_HR@5': 0.0794, 'Best_NDCG@5': 0.0551, 'Best_HR@10': 0.1101, 'Best_NDCG@10': 0.0646}
+2026-02-09 16:13:14,346 - logger - INFO - {'Best_epoch_HR@5': 30, 'Best_epoch_NDCG@5': 30, 'Best_epoch_HR@10': 25, 'Best_epoch_NDCG@10': 30}
+2026-02-09 16:13:16,846 - logger - INFO - loss in epoch 31: ce_loss 5.226, dif_loss 0.677
+2026-02-09 16:13:19,350 - logger - INFO - loss in epoch 32: ce_loss 5.165, dif_loss 0.680
+2026-02-09 16:13:21,842 - logger - INFO - loss in epoch 33: ce_loss 5.114, dif_loss 0.685
+2026-02-09 16:13:24,352 - logger - INFO - loss in epoch 34: ce_loss 5.060, dif_loss 0.691
+2026-02-09 16:13:26,861 - logger - INFO - loss in epoch 35: ce_loss 5.003, dif_loss 0.695
+2026-02-09 16:13:33,522 - logger - INFO - {'Best_HR@5': 0.0801, 'Best_NDCG@5': 0.0562, 'Best_HR@10': 0.1101, 'Best_NDCG@10': 0.0646}
+2026-02-09 16:13:33,522 - logger - INFO - {'Best_epoch_HR@5': 35, 'Best_epoch_NDCG@5': 35, 'Best_epoch_HR@10': 25, 'Best_epoch_NDCG@10': 30}
+2026-02-09 16:13:36,034 - logger - INFO - loss in epoch 36: ce_loss 4.945, dif_loss 0.703
+2026-02-09 16:13:38,536 - logger - INFO - loss in epoch 37: ce_loss 4.895, dif_loss 0.706
+2026-02-09 16:13:41,134 - logger - INFO - loss in epoch 38: ce_loss 4.847, dif_loss 0.710
+2026-02-09 16:13:43,639 - logger - INFO - loss in epoch 39: ce_loss 4.803, dif_loss 0.715
+2026-02-09 16:13:46,143 - logger - INFO - loss in epoch 40: ce_loss 4.748, dif_loss 0.717
+2026-02-09 16:13:55,300 - logger - INFO - loss in epoch 41: ce_loss 4.702, dif_loss 0.724
+2026-02-09 16:13:57,795 - logger - INFO - loss in epoch 42: ce_loss 4.658, dif_loss 0.728
+2026-02-09 16:14:00,411 - logger - INFO - loss in epoch 43: ce_loss 4.612, dif_loss 0.732
+2026-02-09 16:14:34,694 - logger - INFO - loss in epoch 44: ce_loss 4.573, dif_loss 0.734
+2026-02-09 16:14:37,194 - logger - INFO - loss in epoch 45: ce_loss 4.531, dif_loss 0.739
+2026-02-09 16:14:46,503 - logger - INFO - loss in epoch 46: ce_loss 4.488, dif_loss 0.741
+2026-02-09 16:14:48,998 - logger - INFO - loss in epoch 47: ce_loss 4.444, dif_loss 0.746
+2026-02-09 16:14:51,515 - logger - INFO - loss in epoch 48: ce_loss 4.402, dif_loss 0.747
+2026-02-09 16:14:54,013 - logger - INFO - loss in epoch 49: ce_loss 4.369, dif_loss 0.752
+2026-02-09 16:14:56,517 - logger - INFO - loss in epoch 50: ce_loss 4.332, dif_loss 0.753
+2026-02-09 16:15:32,822 - logger - INFO - loss in epoch 51: ce_loss 4.299, dif_loss 0.756
+2026-02-09 16:15:35,356 - logger - INFO - loss in epoch 52: ce_loss 4.260, dif_loss 0.759
+2026-02-09 16:15:37,951 - logger - INFO - loss in epoch 53: ce_loss 4.221, dif_loss 0.763
+2026-02-09 16:15:40,483 - logger - INFO - loss in epoch 54: ce_loss 4.190, dif_loss 0.763
+2026-02-09 16:15:42,995 - logger - INFO - loss in epoch 55: ce_loss 4.157, dif_loss 0.766
+2026-02-09 16:15:49,703 - logger - INFO - {'Best_HR@5': 0.0801, 'Best_NDCG@5': 0.0562, 'Best_HR@10': 0.1101, 'Best_NDCG@10': 0.0646}
+2026-02-09 16:15:49,703 - logger - INFO - {'Best_epoch_HR@5': 35, 'Best_epoch_NDCG@5': 35, 'Best_epoch_HR@10': 25, 'Best_epoch_NDCG@10': 30}
+2026-02-09 16:15:49,703 - logger - INFO - start testing: 2026-02-09 16:15:49.703502
+2026-02-09 16:15:56,299 - logger - INFO - Test------------------------------------------------------
+2026-02-09 16:15:56,299 - logger - INFO - {'HR@5': 0.0642, 'NDCG@5': 0.0454, 'HR@10': 0.0883, 'NDCG@10': 0.0531}
+2026-02-09 16:15:56,299 - logger - INFO - Best Eval---------------------------------------------------------
+2026-02-09 16:15:56,299 - logger - INFO - {'Best_HR@5': 0.0801, 'Best_NDCG@5': 0.0562, 'Best_HR@10': 0.1101, 'Best_NDCG@10': 0.0646}
+2026-02-09 16:15:56,299 - logger - INFO - {'Best_epoch_HR@5': 35, 'Best_epoch_NDCG@5': 35, 'Best_epoch_HR@10': 25, 'Best_epoch_NDCG@10': 30}
+2026-02-09 16:15:56,300 - logger - INFO - Training duration: 4.0 minutes and 43.542564392089844 seconds
