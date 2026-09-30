@@ -1,6 +1,5 @@
 # SEDRec
-Semantic Entanglement for Generative Diffusion-based Sequential Recommendation
-
+Official source code for CIKM 2026 paper "Semantic Entanglement for Generative Diffusion-based Sequential Recommendation"
 <br/>
 
 ## Data Download
