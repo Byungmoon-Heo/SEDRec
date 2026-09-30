@@ -12,3 +12,6 @@ After downloading, place the file in the `datasets/data/` folder.
 
 ## For Training Start:
 Python main.py --dataset sports --model sedrec
+
+## Acknowledgement
+This repository is based on [ADRec](https://github.com/Nemo-1024/ADRec).
