@@ -1,0 +1,4 @@
+# Minimal config placeholder for MovieLens1M dataset
+# Kept for symmetry with other datasets; genrec primarily reads runtime config dict.
+name: MovieLens1M
+raw_url: https://files.grouplens.org/datasets/movielens/ml-1m.zip
