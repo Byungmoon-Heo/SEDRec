@@ -8,6 +8,7 @@ Official source code for CIKM 2026 paper "Semantic Entanglement for Generative D
 - pandas==2.2.2
 - python==3.10.12
 - torch==2.5.0
+- einops==0.8.0
 - transformer==4.57.6
 - sentence-transformer==3.4.1
 <br>
